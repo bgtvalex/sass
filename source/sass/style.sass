@@ -1,0 +1,70 @@
+// И М П О Р Т 
+
+@import reset
+
+
+// К О М М Е Н Т А Р И И 
+
+// этот комментарий не пойдет в style.css
+
+
+// А Р Ф М Е Т И К А 
+$width_1: 300px / 960px * 100%
+
+
+// П Е Р Е М Е Н Н Ы Е 
+$color_1: red
+$color_2: red
+$color_3: yellow
+$color_4: grey
+$color_5: cyan
+
+
+// Ш А Б Л О Н Ы 
+%tplborder
+	border-bottom: 2px dashed red
+
+
+// М И К С И Н Ы 
+@mixin fontz($f, $c)
+	font-size: $f
+	color: $c
+
+
+// В Л О Ж Е Н Н О С Т Ь 
+body 
+	background: aqua
+h1
+	color: $color_1
+	font-size: 90px	
+	text-align: center
+
+.block
+	padding: 30px
+	font-size: 50px
+	line-height: 80px
+	>p
+		color: $color_1
+	span
+		color: $color_3
+	.block__text
+		font-size: 80px
+	&.block--big
+		background: $color_4
+
+.link
+	color: $color_1
+	text-decoration: underline
+	&:hover
+		color: $color_3
+	// привязка миксина
+	@include fontz(45px, $color_4)
+	// привязка к блоку 
+	.block &
+		color: $color_5
+		// привязка шаблона 
+		@extend %tplborder
+.block-w
+	width: $width_1
+	height: 10px
+	background: $color_3

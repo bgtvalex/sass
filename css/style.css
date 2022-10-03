@@ -1,0 +1,101 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.block .link {
+  border-bottom: 2px dashed red;
+}
+
+body {
+  background: aqua;
+}
+
+h1 {
+  color: red;
+  font-size: 90px;
+  text-align: center;
+}
+
+.block {
+  padding: 30px;
+  font-size: 50px;
+  line-height: 80px;
+}
+.block > p {
+  color: red;
+}
+.block span {
+  color: yellow;
+}
+.block .block__text {
+  font-size: 80px;
+}
+.block.block--big {
+  background: grey;
+}
+
+.link {
+  color: red;
+  text-decoration: underline;
+  font-size: 45px;
+  color: grey;
+}
+.link:hover {
+  color: yellow;
+}
+.block .link {
+  color: cyan;
+}
+
+.block-w {
+  width: 31.25%;
+  height: 10px;
+  background: yellow;
+}
